@@ -38,6 +38,7 @@
 		}
 		
 		.overlay-image{
+			pointer-events: none;
 			position: absolute;
 			width: 100%;
 			height: auto;
@@ -54,6 +55,11 @@
 		  src: url(assets/fonts/Inter.woff2);
 		}
 
+		@font-face {
+		  font-family: Satoshi;
+		  src: url(assets/fonts/Satoshi-Variable.ttf);
+		}
+			
 		h1 {
 		  font-family: Frick;
 		  font-size: 22vw;
@@ -69,6 +75,16 @@
 		  letter-spacing: auto;
 		  margin-top: -7vw;
 		  margin-left: 4vw;
+		  margin-bottom: 3vw;
+		  text-align: left;
+		  color: oklch(1 0 180);
+		}
+
+		p {
+		  font-family: Satoshi;
+		  font-size: 5vw;
+		  letter-spacing: auto;
+		  margin-left: 6vw;
 		  text-align: left;
 		  color: oklch(1 0 180);
 		}
@@ -79,6 +95,9 @@
 			<div class="text-layer">
 				<h1>Prower</h1>
 				<h2><i>North American River Otter</i></h2>
+				<p>Furtrack</p>
+				<p>Twitter</p>
+				<p><a href="https://t.me/prower250">Telegram</a></p>
 			</div>
 			<img src="assets/images/hero.avif" alt="Portrait illustration of Prower" class="overlay-image">
 			<div class="background-layer">
@@ -99,4 +118,5 @@
 		</div>
 	</body>
 </html>
+
 
