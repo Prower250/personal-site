@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-	<title>Prower's Homepage</title>
+	<title>Power's Homepage</title>
 	<meta charset="utf-8" />
     <meta name="description" content="Personal bio and links" />
     <meta property="og:site_name" content="Prower's Homepage" />
@@ -25,10 +25,6 @@
 			background-color: oklch(0.4657 0.1195 268.67);
 		}
 		
-		.title-name {
-			color: oklch(0.8303 0.1802 117.93);
-		}
-		
 		.wrap-layer{
 			position: relative;
 		}
@@ -41,42 +37,65 @@
 			left: 0;
 		}
 		
+		.overlay-image{
+			position: absolute;
+			width: 100%;
+			height: auto;
+			top: 10vw;
+		}
+		
 		@font-face {
 		  font-family: Frick;
 		  src: url(assets/fonts/Frick0.3-Regular.otf);
 		}
 
+		@font-face {
+		  font-family: Inter;
+		  src: url(assets/fonts/Inter.woff2);
+		}
+
 		h1 {
 		  font-family: Frick;
-		  font-size: 20vw;
-		  letter-spacing: 1vw;
-		  margin-top: 1vw;
+		  font-size: 22vw;
+		  letter-spacing: 1.5vw;
+		  margin-top: 1.5vw;
 		  text-align: center;
+		  color: oklch(0.8303 0.1802 117.93);
+		}
+		
+		h2 {
+		  font-family: Inter;
+		  font-size: 2.7vw;
+		  letter-spacing: auto;
+		  margin-top: -7vw;
+		  margin-left: 4vw;
+		  text-align: left;
+		  color: oklch(1 0 180);
 		}
 		</style>
 	</head>
 	<body>
-	<div class="wrap-layer">
-	<div class="text-layer">
-		<h1 class="title-name">Prower</p>
-	</div>
-	<div class="background-layer">
-		<svg
-			viewbox="0 0 1920 1080"
-			version="1.1"
-			id="svg1"
-			xml:space="preserve"
-			xmlns="http://www.w3.org/2000/svg"
-			xmlns:svg="http://www.w3.org/2000/svg"
-			style="width: 100%; height: auto"
-			preserveAspectRatio="xmidymid meet">
-			<rect style="fill:oklch(0.5614 0.0784 231.84)" y="0" x="0" height="1080" width="1920" id="rect1"/>
-			<path style="fill:oklch(0.5005 0.0989 257.16)" d="M 0,110.2433 C 189.93733,439.22441 468.89158,773.57161 788.51986,773.57161 1108.1481,773.57161 1425.0154,493.29205 1920,493.29205 V 100000 H 0 Z" id="path1"/>
-			<path style="fill:oklch(0.4657 0.1195 268.67)" d="M 0,528.7941 C 124.51662,744.46321 287.64412,979.10993 612.878,988.45258 938.11187,997.79524 1460.5175,708.17302 1920,708.17302 V 100000 H 0 Z" id="path2"/>
-		</svg>
-	</div>
-	</div>
+		<div class="wrap-layer">
+			<div class="text-layer">
+				<h1>Prower</h1>
+				<h2><i>North American River Otter</i></h2>
+			</div>
+			<img src="assets/fonts/hero.avif" alt="Portrait illustration of Prower" class="overlay-image">
+			<div class="background-layer">
+				<svg
+					viewbox="0 0 1920 1080"
+					version="1.1"
+					id="svg1"
+					xml:space="preserve"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:svg="http://www.w3.org/2000/svg"
+					style="width: 100%; height: auto"
+					preserveAspectRatio="xmidymid meet">
+					<rect style="fill:oklch(0.5614 0.0784 231.84)" y="0" x="0" height="1080" width="1920" id="rect1"/>
+					<path style="fill:oklch(0.5005 0.0989 257.16)" d="M 0,110.2433 C 189.93733,439.22441 468.89158,773.57161 788.51986,773.57161 1108.1481,773.57161 1425.0154,493.29205 1920,493.29205 V 100000 H 0 Z" id="path1"/>
+					<path style="fill:oklch(0.4657 0.1195 268.67)" d="M 0,528.7941 C 124.51662,744.46321 287.64412,979.10993 612.878,988.45258 938.11187,997.79524 1460.5175,708.17302 1920,708.17302 V 100000 H 0 Z" id="path2"/>
+				</svg>
+			</div>
+		</div>
 	</body>
-
 </html>
-
